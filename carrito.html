@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi carrito</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.5.3.3.css">
+    <script src="lib/bootstrap/bootstrap.blunde.5.3.3.js"></script>
+    <script src="js/jquery.3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <!-- inicio -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class=" container-fluid ">
+                <a class="navbar-brand" href="#"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger fw-bold" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="ropa_de_bebes.html">ROPAS PARA BEBES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="niños_y_niñas.html">NIÑOS Y NIÑAS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="carrito.html">CARRITO </a>
+                        </li>
+                    </ul>
+                    <!-- Aquí se agrega el formulario de búsqueda -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success text-danger fw-bold" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- fin -->
+    </header>
+<main>
+    <div class="container mt-5">
+        <h2 class="fw-bold text-primary fw-bold text-center ">Carrito de Compras</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+            <img src="img/micarrito.png" alt="" width="350" height="260">
+          </div>
+          <br>
+          <br>
+          <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+            <!-- Los productos se agregarn aal carrito-->
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-between">
+            <h4>Total: $<span id="total-price">0</span></h4>
+            <button class="btn btn-success mt-2" onclick="checkout()">Realiza tu compra</button>
+        </div>
+        <div class="d-flex justify-content-between">
+          <button class="btn btn-success mt-2">Realiza tu pago aki.</button>
+      </div>
+        <br>
+        <br>
+    </div>
+    <script>
+        //  mostrar en el carrito y los productos 
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItems = document.getElementById('cart-items');
+            let totalPrice = 0;
+            cartItems.innerHTML = '';
+            cart.forEach(item => {
+                totalPrice += item.price * item.quantity;
+                cartItems.innerHTML += `
+                    <tr>
+                        <td>${item.product}</td>
+                        <td>${item.quantity}</td>
+                        <td>$${item.price}</td>
+                        <td>$${item.price * item.quantity}</td>
+                    </tr>  `;
+            });
+    
+            document.getElementById('total-price').innerText = totalPrice;
+        }
+    
+        // vaciar el carrito
+        function checkout() {
+            alert('¡Gracias por su compra, visite nuestra para pagina cuando usted desee..!');
+            localStorage.removeItem('cart'); 
+            loadCart(); 
+        }
+        // la página se carga de nuevo
+        window.onload = loadCart;
+        
+    </script>
+</main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>Enlaces Rápidos</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Inicio</a></li>
+                <li><a href="#" class="text-white">Ropa_de_bebes</a></li>
+                <li><a href="#" class="text-white">Niños_y_niñas</a></li>
+                <li><a href="#" class="text-white">Contacto</a></li>
+                <li><a href="#" class="text-white">Carrito</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Servicios</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Envíos</a></li>
+                <li><a href="#" class="text-white">Devoluciones</a></li>
+                <li><a href="#" class="text-white">Soporte</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Redes Sociales</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Facebook</a></li>
+                <li><a href="#" class="text-white">Instagram</a></li>
+                <li><a href="#" class="text-white">Whatsapp</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Contacto</h5>
+              <ul class="list-unstyled">
+                <li><p class="text-white">Email: antonellaalberto23@gmail.com</p></li>
+                <li><p class="text-white">Teléfono: #984075248        #987654321    </p></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="my-4" style="border-color: rgba(255,255,255,0.3);">
+          <div class="row">
+            <div class="col text-center">
+              <p class="mb-0 text-white">&copy; 2024 La Moda de los Peques</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>

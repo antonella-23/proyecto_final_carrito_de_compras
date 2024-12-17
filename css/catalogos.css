@@ -1,0 +1,116 @@
+
+.principal-bebes {
+    background: url(../img/fondobebes.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100%;
+}
+ 
+ /* BOTON DE LAS IMAGENES*/
+ .product-card {
+     margin-bottom: 50px;
+ }
+
+ .cart-container {
+     margin-top: 5px;
+ }
+
+ .total {
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ /* ANIMACION DEL TITULO DE BEBITOS Y BEBITAS*/
+ header {
+     animation: efecto 2s ease-in-out 0s infinite;
+ }
+
+ @keyframes efecto {
+     from {
+         color: rgb(74, 15, 236);
+     }
+
+     to {
+         color: rgb(234, 65, 240);
+     }
+ }
+ .producto{
+    background-color: var(--color-acento-claro);
+    padding: 10px;
+}  
+
+ /* EL HOVER DE LAS IMAGENES*/
+ .product-card:hover {
+     transform: scale(1.05);
+ }
+
+ .product-img {
+     max-height: 100px;
+     object-fit: cover;
+ }
+
+ body {
+     font-family: Arial, sans-serif;
+ }
+
+ /* carrusel*/
+ .carousel-item img {
+    object-fit: cover;
+    height: 350px; 
+    width: 100%;
+  }
+  /* Estilos adicionales (opcional) */
+  body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+   /* fondo de pantalla*/ 
+ .bebitas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondo01.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ p{
+    background-color: rgb(173, 125, 106);
+ }
+ .h4 {
+    color: rgb(243, 45, 31);
+    text-align: center;
+    font-size: 45px;
+    animation: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.principal2 {
+    background: url(../img/fondo01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100%;
+}
+.principal3 {
+    background: url(../img/fondo02bebes.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100%;
+}
+.principal_ñiños {
+    background: url(../img/fondosssñiños.PNG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100%;
+}
+
+
+
+

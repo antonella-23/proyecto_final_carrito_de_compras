@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi contacto</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.5.3.3.css">
+    <script src="lib/bootstrap/bootstrap.blunde.5.3.3.js"></script>
+    <script src="js/jquery.3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <!-- inicio -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class=" container-fluid ">
+                <a class="navbar-brand" href="#"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger fw-bold" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="ropa_de_bebes.html">ROPAS PARA BEBES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="niños_y_niñas.html">NIÑOS Y NIÑAS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="carrito.html">CARRITO</a>
+                        </li>
+                    </ul>
+                    <!-- Aquí se agrega el formulario de búsqueda -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success text-danger fw-bold" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- fin -->
+    </header>
+    <!-- inicio -->
+    <main>
+        <div class="contact-form-container">
+            <h2 class="fw-bold">Contáctanos</h2>
+            <form action="submit_form.php" method="POST" id="contactForm">
+                <div class="mb-2">
+                    <label for="nombre" class="form-label fw-bold">Nombre Completo:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-2">
+                    <label for="email" class="form-label fw-bold">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-2">
+                    <label for="telefono" class="form-label fw-bold">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                </div>
+                <div class="mb-2">
+                    <label for="direccion" class="form-label fw-bold">Dirección:</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                </div>
+                <div class="mb-2">
+                    <label for="mensaje" class="form-label fw-bold">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom fw-bold w-100">Enviar</button>
+            </form>
+        </div>
+        
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                document.querySelector('.contact-form-container').innerHTML = `
+                    <h2 class="text-center fw-bold">¡Gracias por contactarnos!</h2>
+                    <p class="text-center fw-bold">Nos pondremos en contacto contigo pronto.</p>`;
+                document.getElementById("contactForm").reset();
+            });
+        </script>
+    </main>
+    <!-- fin -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>Enlaces Rápidos</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Inicio</a></li>
+                <li><a href="#" class="text-white">Ropa_de_bebes</a></li>
+                <li><a href="#" class="text-white">Niños_y_niñas</a></li>
+                <li><a href="#" class="text-white">Contacto</a></li>
+                <li><a href="#" class="text-white">Carrito</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Servicios</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Envíos</a></li>
+                <li><a href="#" class="text-white">Devoluciones</a></li>
+                <li><a href="#" class="text-white">Soporte</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Redes Sociales</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Facebook</a></li>
+                <li><a href="#" class="text-white">Instagram</a></li>
+                <li><a href="#" class="text-white">Whatsapp</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Contacto</h5>
+              <ul class="list-unstyled">
+                <li><p class="text-white">Email: antonellaalberto23@gmail.com</p></li>
+                <li><p class="text-white">Teléfono: #984075248        #987654321    </p></li>
+              </ul>
+            </div>
+          </div>
+          <hr class="my-4" style="border-color: rgba(255,255,255,0.3);">
+          <div class="row">
+            <div class="col text-center">
+              <p class="mb-0 text-white">&copy; 2024 La Moda de los Peques</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>

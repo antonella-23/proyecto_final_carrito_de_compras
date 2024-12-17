@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>niños_y_niñas</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.5.3.3.css">
+    <script src="lib/bootstrap/bootstrap.blunde.5.3.3.js"></script>
+    <script src="js/jquery.3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/catalogos.css">
+</head>
+
+<body class="principal_ñiños">
+    <header class="container-fluid">
+        <!-- inicio -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class=" container-fluid ">
+                <a class="navbar-brand" href="#"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger fw-bold" aria-current="page"
+                                href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="ropa_de_bebes.html">ROPAS PARA BEBES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="niños_y_niñas.html">NIÑOS Y NIÑAS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="carrito.html">CARRITO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success text-danger fw-bold" type="submit">Buscar</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+        <!-- fin -->
+    </header>
+    <main>
+        <section class=" text-center">
+            <main class="col-12 fs-2 text-uppercase fw-bolder py-3">
+                <br>
+                <h2 class="fw-bold">ROPAS PARA NIÑAS Y NIÑOS</h2>
+            </main>
+        </section>
+        <br>
+        <section class="text-center">
+            <main class="col-12 fs-2 text-uppercase fw-bolder py-3">
+            </main>
+        </section>
+        <section>
+            <div class="container-fluid text-center py-3">
+                <div class="row cart-container">
+                    <!-- Producto 1 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(226, 37, 243, 0.8);">
+                            <img src="img/ñiñas01.PNG" class="object-fit-cover border rounded border-warning"
+                                alt="Vestido Lisa Con Cartera Niña Azul Camelllo">
+                            <div class="card-body">
+                                <h5 class="card-title"> Vestido Lisa Con Cartera Niña Azul Camelllo</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="T-2">T-2 </option>
+                                        <option value="T-4">T-4</option>
+                                        <option value="T-6">T-6</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Vestido Lisa Con Cartera Niña Azul Camelllo', 85.00)">Añadir al
+                                    carrito
+                                    - $85.00</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(226, 37, 243, 0.8);">
+                            <img src="img/ñiñas02.PNG" class="object-fit-cover border rounded border-warning"
+                                alt="Palazo Greta Niña Verde Jade">
+                            <div class="card-body">
+                                <h5 class="card-title">Palazo Greta Niña Verde Jade </h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="T-4">T-4 </option>
+                                        <option value="T-6">T-6</option>
+                                        <option value="T-8">T-8</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Palazo Greta Niña Verde Jade', 64.00)">Añadir al carrito
+                                    - $64.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(226, 37, 243, 0.8);">
+                            <img src="img/ñiña03.PNG" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto Susi Melon Bebe Azul">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto Susi Melon Bebe Azul </h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="T-4">T-4 </option>
+                                        <option value="T-3">T-3</option>
+                                        <option value="T-8">T-8</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Conjunto Susi Melon Bebe Azul', 90.00)">Añadir al
+                                    carrito - $90.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 4-->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(226, 37, 243, 0.8);">
+                            <img src="img/ñiña04.PNG" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto Chanel Verde Caribe Beige">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto Chanel Verde Caribe Beige</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="T-4">T-4 </option>
+                                        <option value="T-7">T-3</option>
+                                        <option value="T-10">T-8</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Conjunto Chanel Verde Caribe Beige', 87.00)">Añadir al
+                                    carrito - $87.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 5 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(202, 130, 202, 0.8);">
+                            <img src="img/ñiña05.PNG" class="object-fit-cover border rounded border-warning"
+                                alt=" Polo Marina Niña Rosado">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Polo Marina Niña Rosado</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="T-5">T-5 </option>
+                                        <option value="T-6">T-6</option>
+                                        <option value="T-8">T-8</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Polo Marina Niña Rosado', 40)">Añadir al carrito
+                                    - $40.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 6 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(202, 130, 202, 0.8);">
+                            <img src="img/ñiñas06.PNG" class="object-fit-cover border rounded border-warning"
+                                alt="Casaca Rose Rosado">
+                            <div class="card-body">
+                                <h5 class="card-title">Casaca Rose Rosado</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="T-4">T-5 </option>
+                                        <option value="T-3">T-3</option>
+                                        <option value="T-8">T-8</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Casaca Rose Rosado', 91.00)">Añadir
+                                    al
+                                    carrito - $91.00</button>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="text-center">
+            <main class="col-12 border-top   py-2">
+                <h1></h1>
+            </main>
+        </section>
+        <section class=" text-center">
+            <main class="col-12 fs-2 text-uppercase fw-bolder py-3">
+                <header>VARONES</header>
+            </main>
+        </section>
+        <div class="container-fluid text-center py-3">
+            <div class="row cart-container">
+                <!-- Producto 1 -->
+                <div class="col-md-3">
+                    <div class="card product-card"
+                        style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 145, 43, 0.8);">
+                        <img src="img/ñiño01.PNG" class="object-fit-cover border rounded  border-warning"
+                            alt="Blazer Josue Azul">
+                        <div class="card-body">
+                            <h5 class="card-title">Blazer Josue Azul</h5>
+                            <!-- La selección de tallas -->
+                            <div class="tallas">
+                                <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                    <option value="T-4">T-4 </option>
+                                    <option value="T-3">T-6</option>
+                                    <option value="T-8">T-7</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <button class="btn btn-primary" onclick="addToCart('Blazer Josue Azul', 25)">Añadir al
+                                carrito
+                                - $69.00</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-3">
+                    <div class="card product-card"
+                        style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 145, 43, 0.8);">
+                        <img src="img/ñiño02.PNG" class="object-fit-cover border rounded border-warning"
+                            alt=" Casaca Joe Plomo Negro">
+                        <div class="card-body">
+                            <h5 class="card-title">Casaca Joe Plomo Negro</h5>
+                            <!-- La selección de tallas -->
+                            <div class="tallas">
+                                <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                    <option value="T-3">T-3</option>
+                                    <option value="T-5">T-5</option>
+                                    <option value="T-8">T-8</option>
+                                </select>
+                            </div>
+                            <br>
+
+                            <button class="btn btn-primary" onclick="addToCart('Casaca Joe Plomo Negro', 25)">Añadir al
+                                carrito
+                                - $65.00</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-3">
+                    <div class="card product-card"
+                        style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 145, 43, 0.8);">
+                        <img src="img/ñiño03.PNG" class="object-fit-cover border rounded border-warning"
+                            alt="Polo Deivid Blanco/Azul Marino">
+                        <div class="card-body ">
+                            <h5 class="card-title">Polo Deivid Blanco/Azul Marino</h5>
+                            <!-- La selección de tallas -->
+                            <div class="tallas">
+                                <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                    <option value="T-4">T-5 </option>
+                                    <option value="T-3">T-3</option>
+                                    <option value="T-8">T-6</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary"
+                                onclick="addToCart('Polo Deivid Blanco/Azul Marino', 20)">Añadir al carrito
+                                - $20.00</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="col-md-3 ">
+                    <div class="card product-card"
+                        style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 145, 43, 0.8);">
+                        <img src="img/ñiño04.PNG" class="object-fit-cover border rounded border-warning"
+                            alt="Polo Nil Plomo Plata">
+                        <div class="card-body">
+                            <h5 class="card-title"> Polo Nil Plomo Plata</h5>
+                            <!-- La selección de tallas -->
+                            <div class="tallas">
+                                <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                    <option value="T-4">T-2 </option>
+                                    <option value="T-3">T-4</option>
+                                    <option value="T-8">T-6</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary" onclick="addToCart('Polo Nil Plomo Plata', 40)">Añadir al
+                                carrito
+                                - $40.00</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div class="col-md-3 ">
+                    <div class="card product-card"
+                        style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(49, 235, 12, 0.8);">
+                        <img src="img/ñiño05.PNG" class="object-fit-cover border rounded border-warning"
+                            alt="Pantalon Marcelo Negro">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantalon Marcelo Negro</h5>
+                            <!-- La selección de tallas -->
+                            <div class="tallas">
+                                <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                    <option value="T-4">T-5 </option>
+                                    <option value="T-3">T-3</option>
+                                    <option value="T-8">T-8</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary" onclick="addToCart('Pantalon Marcelo Negro', 25)">Añadir al
+                                carrito
+                                - $42.00</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div class="col-md-3 ">
+                    <div class="card product-card"
+                        style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(49, 235, 12, 0.8);">
+                        <img src="img/ñiño06.PNG" class="object-fit-cover border rounded border-warning"
+                            alt=" Pantalon Jesus Niño Beige">
+                        <div class="card-body">
+                            <h5 class="card-title">Pantalon Jesus Niño Beige</h5>
+                            <div class="tallas">
+                                <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                    <option value="T-4">T-5 </option>
+                                    <option value="T-3">T-3</option>
+                                    <option value="T-8">T-8</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button class="btn btn-primary" onclick="addToCart('Pantalon Jesus Niño Beige', 62)">Añadir
+                                al carrito
+                                - $62.00</button>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <section class="text-center">
+                    <main class="col-12 border-top  py-2">
+                        <h1></h1>
+                    </main>
+                </section>
+            </div>
+        </div>
+        </div>
+        <script>
+            // Función para agregar productos al carrito
+            function addToCart(product, price) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                // Buscar si el producto ya está en el carrito
+                let existingProduct = cart.find(item => item.product === product);
+                if (existingProduct) {
+                    existingProduct.quantity++;
+                } else {
+                    cart.push({ product, price, quantity: 1 });
+                }
+                // Guardar el carrito actualizado en localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${product} agregado al carrito.`);
+            }
+        </script>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Inicio</a></li>
+                        <li><a href="#" class="text-white">Ropa_de_bebes</a></li>
+                        <li><a href="#" class="text-white">Niños_y_niñas</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                        <li><a href="#" class="text-white">Carrito</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Envíos</a></li>
+                        <li><a href="#" class="text-white">Devoluciones</a></li>
+                        <li><a href="#" class="text-white">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">Whatsapp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="text-white">Email: antonellaalberto23@gmail.com</p>
+                        </li>
+                        <li>
+                            <p class="text-white">Teléfono: #984075248 #987654321 </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.3);">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0 text-white">&copy; 2024 La Moda de los Peques</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

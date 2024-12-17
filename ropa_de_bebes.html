@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ropa_de_bebes</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.5.3.3.css">
+    <script src="lib/bootstrap/bootstrap.blunde.5.3.3.js"></script>
+    <script src="js/jquery.3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/catalogos.css">
+</head>
+
+<body class="principal-bebes">
+    <header class="container-fluid">
+        <!-- inicio -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class=" container-fluid ">
+                <a class="navbar-brand" href="#"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger fw-bold" aria-current="page"
+                                href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="ropa_de_bebes.html">ROPAS PARA BEBES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="niños_y_niñas.html">NIÑOS Y NIÑAS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-danger fw-bold" href="carrito.html">CARRITO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success text-danger fw-bold" type="submit">Buscar</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+        <!-- fin -->
+    </header>
+    <main>
+        <section class=" text-center">
+            <main class="col-12 fs-2 text-uppercase fw-bolder py-3">
+                <header>ROPAS PARA BEBES</header>
+            </main>
+        </section>
+        <!-- Carrusel-->
+        <div class="container-fluid">
+            <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner col-12">
+                    <div class="carousel-item active ">
+                        <img src="img/carrusel.jpeg" class="d-block w-100" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carrusel02.jpeg" class="d-block w-100" alt="Imagen 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+        <br>
+        <!-- Contenedor principal para centrar el header -->
+        <div class="container-fluid">
+            <nav class="navbar-expand-lg navbar-light bg-warning">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <div class="container-fluid collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <br>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-danger fw-bold" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    MARCA
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-danger fw-bold" href="">KUKULI</a></li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-danger fw-bold text-center" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    MATERIAL
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-danger fw-bold"
+                                            href="material_algodon_pina.html">Algodon pina</a></li>
+                                    <li><a class="dropdown-item text-danger fw-bold"
+                                            href="material_hilo_algodon.html">Hilo algodon</a></li>
+                                </ul>
+                            </li>
+                            <br>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- fin -->
+        </div>
+
+        <section class="text-center">
+            <main class="col-12 fs-2 text-uppercase fw-bolder py-3">
+            </main>
+        </section>
+        <section>
+            <div class="container-fluid text-center py-3">
+                <div class="row cart-container">
+                    <!-- Producto 1 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img01.png" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto corazones">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto corazones</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB </option>
+                                        <option value="3-BB">3-BB </option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Conjunto corazones', 70.00)">Añadir
+                                    al
+                                    carrito
+                                    - s/70.00</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center; background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/conjunto011.PNG" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto bebita">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto bebita</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="1-BB">1-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                        <option value="5-BB">5-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Conjunto bebita', 76)">Añadir al
+                                    carrito
+                                    - s/76.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center; background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img05.png" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto unicornio">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto unicornio</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">4-BB</option>
+                                        <option value="4-BB">5-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Conjunto unicornio', 60.00)">Añadir
+                                    al
+                                    carrito - s/60.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 4-->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                        style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img03.png" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto hilary">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto hilary</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Conjunto hilary', 64.00)">Añadir al
+                                    carrito - s/65.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 5 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img04.png" class="object-fit-cover border rounded border-warning"
+                                alt="Vestido bebita">
+                            <div class="card-body">
+                                <h5 class="card-title">Vestido bebita</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="1-BB">1-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Vestido bebita', 63)">Añadir al
+                                    carrito
+                                    - s/50.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 6 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img06.png" class="object-fit-cover border rounded border-warning"
+                                alt="Polos gatitas">
+                            <div class="card-body">
+                                <h5 class="card-title">Polos gatitas</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                        <option value="5-BB">5-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Polos gatitas', 35.00)">Añadir al
+                                    carrito - s/35.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 7 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img12.png" class="object-fit-cover border rounded border-warning"
+                                alt="Bebita marinera">
+                            <div class="card-body">
+                                <h5 class="card-title">Bebita marinera</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="5-BB">5-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Bebita marinera', 25)">Añadir al
+                                    carrito
+                                    - s/45.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 8 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img02.png" class="object-fit-cover border rounded border-warning"
+                                alt="Polo Pamela Conjunto kelly">
+                            <div class="card-body">
+                                <h5 class="card-title">Polo Pamela Conjunto kelly</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="1-BB">1-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Polo Pamela Conjunto kelly', 25)">Añadir al carrito
+                                    - s/35.00</button>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="text-center">
+            <main class="col-12 border-top   py-2">
+                <h1></h1>
+            </main>
+        </section>
+        <section>
+            <div class="container-fluid text-center py-3">
+                <div class="row cart-container">
+                    <!-- Producto 1 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/polo01.png" class="object-fit-cover border rounded  border-warning"
+                                alt="Polo Pamela rojito">
+                            <div class="card-body">
+                                <h5 class="card-title">Polo Pamela rojito</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                        <option value="5-BB">5-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Polo Pamela rojito', 25)">Añadir al
+                                    carrito
+                                    - s/25.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/polo2.jpeg" class="object-fit-cover border rounded border-warning"
+                                alt="polo luecero bebitas rosado">
+                            <div class="card-body">
+                                <h5 class="card-title">polo luecero bebitas rosado</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('polo luecero bebitas rosado', 25)">Añadir al carrito
+                                    - s/30.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center; background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img09.png" class="object-fit-cover border rounded border-warning"
+                                alt="Cafarena bebe gattita">
+                            <div class="card-body">
+                                <h5 class="card-title">Cafarena bebe gattita</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="1-BB">1-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Cafarena bebe gattita', 25)">Añadir
+                                    al carrito
+                                    - s/25.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img10.png" class="object-fit-cover border rounded border-warning"
+                                alt="Overol ">
+                            <div class="card-body">
+                                <h5 class="card-title">Overol </h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="1-BB">1-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Overol ', 25)">Añadir al carrito
+                                    - s/50.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 5 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/img08.png" class="object-fit-cover border rounded border-warning"
+                                alt="Chompita blanquita">
+                            <div class="card-body">
+                                <h5 class="card-title">Chompita blanquita</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="5-BB">5-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Chompita blanquita', 25)">Añadir al
+                                    carrito
+                                    - s/45.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 6 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center; background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/polera01.png" class="object-fit-cover border rounded border-warning"
+                                alt="Bolero Elegante">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolero Elegante </h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Bolero Elegante', 25)">Añadir al
+                                    carrito
+                                    - s/25.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 7 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/casaca01.png" class="object-fit-cover border rounded border-warning"
+                                alt="Casaca adani">
+                            <div class="card-body">
+                                <h5 class="card-title">Casaca adani</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="1-BB">1-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Casaca adani', 25)">Añadir al
+                                    carrito
+                                    - s/60.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 8 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(231, 183, 238, 0.8);">
+                            <img src="img/casaca02.jpeg" class="object-fit-cover border rounded border-warning"
+                                alt="Casaca de rosas">
+                            <div class="card-body">
+                                <h5 class="card-title">Casaca de rosas</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Casaca de rosas', 70.00)">Añadir al
+                                    carrito - s/70.00</button>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class=" text-center">
+            <main class="col-12 fs-2 text-uppercase fw-bolder py-3">
+                <header>VARONES</header>
+            </main>
+        </section>
+        <section class="text-center">
+            <main class="col-12 border-top   py-2">
+                <h1></h1>
+            </main>
+        </section>
+        <section>
+            <div class="container-fluid text-center py-3">
+                <div class="row cart-container">
+                    <!-- Producto 1 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 193, 10, 0.8);">
+                            <img src="img/img13.png" class="object-fit-cover border rounded  border-warning"
+                                alt="Ajuar toñito">
+                            <div class="card-body">
+                                <h5 class="card-title">Ajuar toñito</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Ajuar toñito', 57.60)">Añadir al
+                                    carrito - s/57.60</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 193, 10, 0.8);">
+                            <img src="img/short01.PNG" class="object-fit-cover border rounded border-warning"
+                                alt="Pilucho estanpado">
+                            <div class="card-body">
+                                <h5 class="card-title">Pilucho estanpado</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="1-BB">1-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Pilucho estanpado', 55.00)">Añadir
+                                    al carrito - s/55.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 193, 10, 0.8);">
+                            <img src="img/poloshort01.jpeg" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto Zoo">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto Zoo</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="1-BB">1-BB</option>
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Conjunto Zoo', 66.00)">Añadir al
+                                    carrito - s/38.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 193, 10, 0.8);">
+                            <img src="img/short02.PNG" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto puppy">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto puppy</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Conjunto puppy', 37.00)">Añadir al
+                                    carrito - s/55.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 5 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(109, 196, 202, 0.8);">
+                            <img src="img/img16.png" class="object-fit-cover border rounded border-warning"
+                                alt="Polo puppy">
+                            <div class="card-body">
+                                <h5 class="card-title">Polo puppy</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Polo puppy', 25)">Añadir al carrito
+                                    - s/25</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 6 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(109, 196, 202, 0.8);">
+                            <img src="img/img18.png" class="object-fit-cover border rounded border-warning"
+                                alt="Polo conejito">
+                            <div class="card-body">
+                                <h5 class="card-title">Polo conejito</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Polo conejito', 25)">Añadir al
+                                    carrito
+                                    - s/25</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 7 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(109, 196, 202, 0.8);">
+                            <img src="img/img14.png" class="object-fit-cover border rounded border-warning"
+                                alt="Pilucho estanpado">
+                            <div class="card-body">
+                                <h5 class="card-title">Pilucho estanpado</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="5-BB">5-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Pilucho estanpado', 25)">Añadir al
+                                    carrito
+                                    - s/25.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 8 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(109, 196, 202, 0.8);">
+                            <img src="img/polo03.jpeg" class="object-fit-cover border rounded border-warning"
+                                alt="Polo dinosaurio">
+                            <div class="card-body">
+                                <h5 class="card-title">Polo dinosaurio</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Polo dinosaurio', 25)">Añadir al
+                                    carrito
+                                    - s/28.00</button>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="text-center">
+            <main class="col-12 border-top   py-2">
+                <h1></h1>
+            </main>
+        </section>
+        <section>
+            <div class="container-fluid text-center py-3">
+                <div class="row cart-container">
+                    <!-- Producto 1 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 145, 43, 0.8);">
+                            <img src="img/conjunto01.jpeg" class="object-fit-cover border rounded  border-warning"
+                                alt="Conjunto pinguino">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto pinguino</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Conjunto pinguino', 25)">Añadir al
+                                    carrito
+                                    - s/63.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 145, 43, 0.8);">
+                            <img src="img/img20.png" class="object-fit-cover border rounded border-warning"
+                                alt="Conjunto zoo">
+                            <div class="card-body">
+                                <h5 class="card-title">Conjunto zoo</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="5-BB">5-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Conjunto zoo', 25)">Añadir al
+                                    carrito
+                                    - s/30.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 145, 43, 0.8);">
+                            <img src="img/img21.png" class="object-fit-cover border rounded border-warning"
+                                alt="Ajuar rabit">
+                            <div class="card-body ">
+                                <h5 class="card-title">Ajuar rabit</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Ajuar rabit', 25)">Añadir al carrito
+                                    - s/30.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(235, 145, 43, 0.8);">
+                            <img src="img/img22.png" class="object-fit-cover border rounded border-warning"
+                                alt="Ajaur marinero">
+                            <div class="card-body">
+                                <h5 class="card-title">Ajaur marinero</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Ajaur marinero', 25)">Añadir al
+                                    carrito
+                                    - s/30.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 5 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(49, 235, 12, 0.8);">
+                            <img src="img/img23.png" class="object-fit-cover border rounded border-warning"
+                                alt="Casaca pedrito">
+                            <div class="card-body">
+                                <h5 class="card-title">Casaca pedrito</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Casaca pedrito', 25)">Añadir al
+                                    carrito
+                                    - s/50.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 6 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center;  background-color: rgba(49, 235, 12, 0.8);">
+                            <img src="img/img19.png" class="object-fit-cover border rounded border-warning"
+                                alt="Polera boy">
+                            <div class="card-body">
+                                <h5 class="card-title">Polera boy</h5>
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Polera boy', 25)">Añadir al carrito
+                                    - s/45.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 7 -->
+                    <div class="col-md-3">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center; background-color: rgba(49, 235, 12, 0.8);">
+                            <img src="img/img24.png" class="object-fit-cover border rounded border-warning"
+                                alt="Polera willie">
+                            <div class="card-body">
+                                <h5 class="card-title">Polera willie</h5>
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary" onclick="addToCart('Polera willie', 46.00)">Añadir al
+                                    carrito - s/46.00</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Producto 8 -->
+                    <div class="col-md-3 ">
+                        <div class="card product-card"
+                            style="background-image: url('img/fondo.jpg'); background-size: cover; background-position: center; background-color: rgba(49, 235, 12, 0.8);">
+                            <img src="img/casaca01.01.jpeg" class="object-fit-cover border rounded border-warning"
+                                alt="Casaca nickey">
+                            <div class="card-body">
+                                <h5 class="card-title">Casaca nickey</h5>
+                                <!-- La selección de tallas -->
+                                <div class="tallas">
+                                    <label for="talla" class="form-label text-danger fw-bold">Talla:</label>
+                                    <select class="form-select" id="talla" aria-label="Seleccione una talla">
+                                        <option value="2-BB">2-BB</option>
+                                        <option value="3-BB">3-BB</option>
+                                        <option value="4-BB">4-BB</option>
+                                    </select>
+                                </div>
+                                <br>
+
+                                <button class="btn btn-primary" onclick="addToCart('Casaca nickey',65.00)">Añadir al
+                                    carrito
+                                    - s/65.00</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+        </section>
+        <section class="text-center">
+            <main class="col-12 border-top  py-2">
+                <h1></h1>
+            </main>
+        </section>
+        </div>
+        </div>
+        </div>
+        <script>
+            // Función para agregar productos al carrito
+            function addToCart(product, price) {
+                let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                // Buscar si el producto ya está en el carrito
+                let existingProduct = cart.find(item => item.product === product);
+                if (existingProduct) {
+                    existingProduct.quantity++;
+                } else {
+                    cart.push({ product, price, quantity: 1 });
+                }
+                // Guardar el carrito actualizado en localStorage
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(`${product} agregado al carrito.`);
+            }
+        </script>
+    </main>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Inicio</a></li>
+                        <li><a href="#" class="text-white">Ropa_de_bebes</a></li>
+                        <li><a href="#" class="text-white">Niños_y_niñas</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                        <li><a href="#" class="text-white">Carrito</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Envíos</a></li>
+                        <li><a href="#" class="text-white">Devoluciones</a></li>
+                        <li><a href="#" class="text-white">Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">Whatsapp</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <p class="text-white">Email: antonellaalberto23@gmail.com</p>
+                        </li>
+                        <li>
+                            <p class="text-white">Teléfono: #984075248 #987654321 </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.3);">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0 text-white">&copy; 2024 La Moda de los Peques</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
